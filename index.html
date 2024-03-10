@@ -1288,6 +1288,27 @@
     <script src="http://localhost/arun/wp-content/plugins/elementor/assets/js/elementor-admin-bar.min.js?ver=3.16.5" id="elementor-admin-bar-js"></script>
     <script src="http://localhost/arun/wp-includes/js/hoverintent-js.min.js?ver=2.2.1" id="hoverintent-js-js"></script>
     <script src="http://localhost/arun/wp-includes/js/admin-bar.min.js?ver=6.4.3" id="admin-bar-js"></script>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCbD-W23rcEfmYsocMqKP-TgQ1pObrdEgE",
+  authDomain: "portfolio-70b39.firebaseapp.com",
+  projectId: "portfolio-70b39",
+  storageBucket: "portfolio-70b39.appspot.com",
+  messagingSenderId: "624371829680",
+  appId: "1:624371829680:web:345f626dddd39f06f66475",
+  measurementId: "G-P90FVSKVHJ"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 </body>
 
 </html>
